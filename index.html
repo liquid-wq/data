@@ -1,11 +1,126 @@
 <!DOCTYPE html>
-<html lang="de">
+<html lang="en">
 <head>
 <meta charset="UTF-8">
-<meta http-equiv="refresh" content="0; url=https://ko-fi.com/liqui69747">
-<link rel="canonical" href="https://ko-fi.com/liqui69747">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>RAW-NES &amp; MEGA-RAW — Downloads</title>
+<meta name="description" content="RetroAchievements on original hardware. Downloads for RAW-NES (EverDrive N8 PRO) and MEGA-RAW (Mega EverDrive).">
+<style>
+  :root{
+    --bg:#000000;
+    --panel:#14181e;
+    --line:#2a3038;
+    --green:#3ad13a;
+    --green-dim:#2a9a2a;
+    --gold:#ffc83d;
+    --text:#c8c8c8;
+    --dim:#7d858f;
+    --mono: ui-monospace, "Cascadia Mono", "SF Mono", Menlo, Consolas, monospace;
+  }
+  *{box-sizing:border-box}
+  html{-webkit-text-size-adjust:100%}
+  body{
+    margin:0; background:var(--bg); color:var(--text);
+    font-family:var(--mono); font-size:16px; line-height:1.6;
+    padding:clamp(1.25rem,4vw,3rem) 1.25rem 3rem;
+  }
+  .wrap{max-width:660px;margin:0 auto}
+
+  /* ---- Kopf ---- */
+  .eyebrow{
+    color:var(--dim); font-size:.75rem; letter-spacing:.22em;
+    text-transform:uppercase; margin:0 0 .9rem;
+  }
+  h1{
+    font-size:clamp(1.5rem,5.5vw,2.1rem); line-height:1.25; margin:0 0 .6rem;
+    color:var(--green); font-weight:700; letter-spacing:-.01em;
+  }
+  h1 .amp{color:var(--dim); font-weight:400}
+  .lede{margin:0 0 2.6rem; color:var(--text); max-width:46ch}
+  .lede .de{display:block; color:var(--dim); font-size:.9rem; margin-top:.35rem}
+
+  /* ---- Download-Karten: Optik der Live-Werte-Anzeige ---- */
+  .card{
+    display:block; text-decoration:none; color:inherit;
+    background:var(--panel); border:1px solid var(--line);
+    border-left:3px solid var(--green-dim);
+    padding:1.1rem 1.2rem; margin-bottom:1rem;
+    transition:border-color .18s ease, background .18s ease, transform .18s ease;
+  }
+  .card:hover,.card:focus-visible{
+    background:#191e26; border-color:var(--line);
+    border-left-color:var(--gold); transform:translateX(2px);
+  }
+  .card:focus-visible{outline:2px solid var(--gold); outline-offset:2px}
+  .card-top{display:flex; align-items:baseline; gap:.7rem; flex-wrap:wrap}
+  .name{color:var(--green); font-size:1.15rem; font-weight:700}
+  .card:hover .name,.card:focus-visible .name{color:#5ae85a}
+  .hw{color:var(--dim); font-size:.8rem}
+  .card-note{margin:.5rem 0 0; font-size:.88rem; color:var(--text)}
+  .go{
+    margin:.85rem 0 0; font-size:.82rem; color:var(--gold);
+    letter-spacing:.06em; text-transform:uppercase;
+  }
+  .go::after{content:" \203A"; }
+
+  /* ---- Fussbereich ---- */
+  .rule{border:0; border-top:1px solid var(--line); margin:2.6rem 0 1.4rem}
+  .foot{font-size:.85rem; color:var(--dim); margin:0 0 .5rem}
+  .foot a{color:var(--green-dim)}
+  .foot a:hover,.foot a:focus-visible{color:var(--green)}
+  .kofi{
+    display:inline-block; margin-top:.9rem; font-size:.85rem;
+    color:var(--dim); text-decoration:none;
+    border-bottom:1px dotted var(--line); padding-bottom:1px;
+  }
+  .kofi:hover,.kofi:focus-visible{color:var(--gold); border-bottom-color:var(--gold)}
+
+  @media (prefers-reduced-motion:reduce){
+    *{transition:none !important; animation:none !important}
+  }
+</style>
 </head>
 <body>
-<p>Weiterleitung... falls diese nicht automatisch funktioniert, <a href="https://ko-fi.com/liqui69747">hier klicken</a>.</p>
+<div class="wrap">
+
+  <p class="eyebrow">RetroAchievements on original hardware</p>
+  <h1>RAW-NES <span class="amp">&amp;</span> MEGA-RAW</h1>
+  <p class="lede">
+    Earn RetroAchievements while playing on a real console, over USB from your
+    EverDrive flash cart. No emulator involved.
+    <span class="de">Echte Hardware, echte Achievements — per USB vom EverDrive.</span>
+  </p>
+
+  <a class="card" href="https://github.com/liquid-wq/raw-nes/releases/latest">
+    <span class="card-top">
+      <span class="name">RAW-NES</span>
+      <span class="hw">NES · EverDrive N8 PRO</span>
+    </span>
+    <p class="card-note">FPGA bus snooper, live achievement tracking, leaderboards, hardcore mode.</p>
+    <p class="go">Latest release</p>
+  </a>
+
+  <a class="card" href="https://github.com/liquid-wq/mega-raw/releases/latest">
+    <span class="card-top">
+      <span class="name">MEGA-RAW</span>
+      <span class="hw">Mega Drive / Genesis · Mega EverDrive</span>
+    </span>
+    <p class="card-note">The original project RAW-NES grew out of.</p>
+    <p class="go">Latest release</p>
+  </a>
+
+  <hr class="rule">
+
+  <p class="foot">
+    Source, issues and setup guides on GitHub:
+    <a href="https://github.com/liquid-wq/raw-nes">raw-nes</a> ·
+    <a href="https://github.com/liquid-wq/mega-raw">mega-raw</a>
+  </p>
+  <p class="foot">
+    Built by Liqui. Bug reports belong in GitHub Issues.
+  </p>
+  <a class="kofi" href="https://ko-fi.com/liqui69747">Support the project on Ko-fi</a>
+
+</div>
 </body>
 </html>
