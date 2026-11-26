@@ -1,5 +1,6 @@
 {
-  "id": 1,
-  "en": "New: DREAM-RAW – RetroAchievements on a real Sega Dreamcast with a GDEMU. More on the project page.",
-  "link": "https://liquid-wq.github.io/dream-raw/"
+  "id": 2,
+  "en": "MEGA-RAW 2.1.0 is out. The highlight: your achievements now appear right in the game, on your TV. No more looking at the PC. After updating, run \"Set up mapper on SD card...\" once.\n\nAlso new: DREAM-RAW for the Sega Dreamcast, see liquid-wq.github.io.",
+  "link": "https://github.com/liquid-wq/mega-raw/releases/latest",
+  "bis_build": 30
 }
